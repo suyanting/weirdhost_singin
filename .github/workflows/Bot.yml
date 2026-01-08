@@ -1,4 +1,4 @@
-name: Bot七天一续
+name: 七天一续Bot
 
 on:
   workflow_dispatch: # 允许在 Actions 页面手动触发此工作流，方便测试
