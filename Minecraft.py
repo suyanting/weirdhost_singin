@@ -117,7 +117,11 @@ def add_server_time(server_url="https://hub.weirdhost.xyz/server/2bb30b54"):
                 add_button.wait_for(state='visible', timeout=30000)
                 add_button.click()
                 print("成功点击 '시간 추가' 按钮。")
-                time.sleep(8) # 等待8秒，确保操作在服务器端生效
+                time.sleep(5) # 等待5秒，确保操作在服务器端生效
+                add_button = page.locator(add_button_selector)
+                add_button.wait_for(state='visible', timeout=30000)
+                add_button.click() 
+                time.sleep(5) # 等待5秒
                 print("任务完成。")
                 browser.close()
                 return True
